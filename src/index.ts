@@ -17,7 +17,8 @@ const items: Set<{
 }> = new Set();
 
 let done: string[] = [];
-export const getUrls = async (page: Page, url: string, baseUrl?: string) => {
+export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
+  const url = _url.split("#")[0];
   console.log("Fetching", url);
   try {
     await page.goto(url);
@@ -29,7 +30,7 @@ export const getUrls = async (page: Page, url: string, baseUrl?: string) => {
   } catch (error) {}
   let text: string | undefined = undefined;
   try {
-    text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerText)) ?? undefined;
+    text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerHTML)) ?? undefined;
   } catch (error) {}
   items.add({
     url,
@@ -42,9 +43,14 @@ export const getUrls = async (page: Page, url: string, baseUrl?: string) => {
     if (href && !done.includes(href)) {
       done.push(href);
       if (baseUrl) {
-        if (href.startsWith(baseUrl)) await getUrls(page, href, baseUrl);
+        if (href.startsWith(baseUrl))
+          try {
+            await getUrls(page, href, baseUrl);
+          } catch (error) {}
       } else {
-        await getUrls(page, href, baseUrl);
+        try {
+          await getUrls(page, href, baseUrl);
+        } catch (error) {}
       }
     }
   }
@@ -63,3 +69,4 @@ export const algoliaCrawl = async () => {
   await indexObjects(Array.from(items));
   console.log("Done!");
 };
+algoliaCrawl();
