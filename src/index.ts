@@ -34,7 +34,7 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
   } catch (error) {}
   let text: string | undefined = undefined;
   try {
-    text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerHTML)) ?? undefined;
+    text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerText)) ?? undefined;
   } catch (error) {}
   let title = "";
   try {
