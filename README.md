@@ -16,7 +16,7 @@ This is a starter repository for building Node.js projects at Koj.
 
 ## 💻 Getting started
 
-1. [Create a new repository from this template](https://github.com/koj-co/template/generate)
+1. [Create a new repository from this template](https://github.com/koj-co/algolia-crawl/generate)
 2. Install dependencies using `npm install`
 3. Update package details in `package.json`
 

@@ -1,18 +1,18 @@
 {
-  "name": "@koj/template",
+  "name": "algolia-crawl",
   "version": "0.0.0",
-  "description": "Repository template with GitHub Actions CI, releases, and more",
+  "description": "Crawl your site and sync your Algolia search index",
   "main": "dist/index.js",
   "scripts": {
     "test": "jest",
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
-    "update-template": "npx update-template https://github.com/koj-co/template",
+    "update-template": "npx update-template https://github.com/koj-co/algolia-crawl",
     "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koj-co/template.git"
+    "url": "git+https://github.com/koj-co/algolia-crawl.git"
   },
   "keywords": [
     "koj",
@@ -23,9 +23,9 @@
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koj-co/template/issues"
+    "url": "https://github.com/koj-co/algolia-crawl/issues"
   },
-  "homepage": "https://github.com/koj-co/template#readme",
+  "homepage": "https://github.com/koj-co/algolia-crawl#readme",
   "devDependencies": {
     "@koj/config": "1.1.1",
     "@semantic-release/changelog": "^5.0.1",
