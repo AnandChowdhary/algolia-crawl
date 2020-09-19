@@ -5,4 +5,5 @@ cosmicSync("algoliacrawl");
 const client = algoliasearch(config("appId"), config("apiKey"));
 const index = client.initIndex(config("index"));
 
-export const hello = "world";
+/** Index objects in Algolia search */
+export const indexObjects = async (objects: Readonly<Record<string, any>>[]) => index.saveObjects(objects);
