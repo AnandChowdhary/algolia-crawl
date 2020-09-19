@@ -53,8 +53,13 @@ export const getUrls = async (page: Page, url: string, baseUrl?: string) => {
 export const crawl = async () => {
   const browser = await launch();
   const page = await browser.newPage();
-  await getUrls(page, "https://anandchowdhary.com", "https://anandchowdhary.com");
+  await getUrls(page, config("startUrl"), config("baseUrl"));
   await browser.close();
-  console.log(Array.from(items).map((i) => i.title));
+  return items;
 };
-crawl();
+
+export const algoliaCrawl = async () => {
+  const items = await crawl();
+  await indexObjects(Array.from(items));
+  console.log("Done!");
+};
