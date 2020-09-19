@@ -20,6 +20,7 @@ let done: string[] = [];
 export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
   const url = _url.split("#")[0];
   if (done.includes(url)) return;
+  done.push(url);
   console.log("Fetching", url);
   try {
     await page.goto(url);
@@ -49,7 +50,6 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
   } catch (error) {}
   for await (const href of hrefs) {
     if (href) {
-      done.push(href);
       if (baseUrl) {
         if (href.startsWith(baseUrl)) await getUrls(page, href, baseUrl);
       } else {
