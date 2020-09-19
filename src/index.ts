@@ -1,5 +1,6 @@
 import algoliasearch from "algoliasearch";
 import { config, cosmicSync } from "@anandchowdhary/cosmic";
+import { createHash } from "crypto";
 import { launch, Page } from "puppeteer";
 
 cosmicSync("algoliacrawl");
@@ -10,6 +11,7 @@ const index = client.initIndex(config("index"));
 export const indexObjects = async (objects: Readonly<Record<string, any>>[]) => index.saveObjects(objects);
 
 const items: Set<{
+  objectID: string;
   url: string;
   title: string;
   description?: string;
@@ -39,6 +41,7 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
     title = await page.title();
   } catch (error) {}
   items.add({
+    objectID: createHash("md5").update(url).digest("hex"),
     url,
     title,
     description,
@@ -68,8 +71,12 @@ export const crawl = async () => {
 };
 
 export const algoliaCrawl = async () => {
-  const items = await crawl();
-  await indexObjects(Array.from(items));
-  console.log("Done!");
+  try {
+    const items = await crawl();
+    await indexObjects(Array.from(items));
+    console.log("Done!");
+  } catch (error) {
+    console.log(error);
+  }
 };
 algoliaCrawl();
