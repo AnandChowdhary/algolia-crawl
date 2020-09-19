@@ -19,6 +19,7 @@ const items: Set<{
 let done: string[] = [];
 export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
   const url = _url.split("#")[0];
+  if (done.includes(url)) return;
   console.log("Fetching", url);
   try {
     await page.goto(url);
@@ -32,25 +33,27 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
   try {
     text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerHTML)) ?? undefined;
   } catch (error) {}
+  let title = "";
+  try {
+    title = await page.title();
+  } catch (error) {}
   items.add({
     url,
-    title: await page.title(),
+    title,
     description,
     text,
   });
-  const hrefs = await page.$$eval("a", (as) => as.map((a) => (a as HTMLAnchorElement).href));
+  let hrefs: string[] = [];
+  try {
+    hrefs = await page.$$eval("a", (as) => as.map((a) => (a as HTMLAnchorElement).href));
+  } catch (error) {}
   for await (const href of hrefs) {
-    if (href && !done.includes(href)) {
+    if (href) {
       done.push(href);
       if (baseUrl) {
-        if (href.startsWith(baseUrl))
-          try {
-            await getUrls(page, href, baseUrl);
-          } catch (error) {}
+        if (href.startsWith(baseUrl)) await getUrls(page, href, baseUrl);
       } else {
-        try {
-          await getUrls(page, href, baseUrl);
-        } catch (error) {}
+        await getUrls(page, href, baseUrl);
       }
     }
   }
