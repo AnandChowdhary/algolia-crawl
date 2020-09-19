@@ -4,6 +4,7 @@
   "description": "Crawl your site and sync your Algolia search index",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
