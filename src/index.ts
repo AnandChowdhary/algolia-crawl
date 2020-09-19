@@ -9,14 +9,19 @@ const index = client.initIndex(config("index"));
 /** Index objects in Algolia search */
 export const indexObjects = async (objects: Readonly<Record<string, any>>[]) => index.saveObjects(objects);
 
-const items: Array<{
+const items: Set<{
+  url: string;
   title: string;
   description?: string;
   text?: string;
-}> = [];
+}> = new Set();
 
-export const getUrls = async (page: Page, url: string) => {
-  await page.goto(url);
+let done: string[] = [];
+export const getUrls = async (page: Page, url: string, baseUrl?: string) => {
+  console.log("Fetching", url);
+  try {
+    await page.goto(url);
+  } catch (error) {}
   let description: string | undefined = undefined;
   try {
     description =
@@ -26,20 +31,30 @@ export const getUrls = async (page: Page, url: string) => {
   try {
     text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerText)) ?? undefined;
   } catch (error) {}
-  items.push({
+  items.add({
+    url,
     title: await page.title(),
     description,
     text,
   });
-  // const hrefs = await page.$$eval("a", (as) => as.map((a) => a.getAttribute("href")));
-  // console.log(hrefs);
+  const hrefs = await page.$$eval("a", (as) => as.map((a) => (a as HTMLAnchorElement).href));
+  for await (const href of hrefs) {
+    if (href && !done.includes(href)) {
+      done.push(href);
+      if (baseUrl) {
+        if (href.startsWith(baseUrl)) await getUrls(page, href, baseUrl);
+      } else {
+        await getUrls(page, href, baseUrl);
+      }
+    }
+  }
 };
 
 export const crawl = async () => {
   const browser = await launch();
   const page = await browser.newPage();
-  getUrls(page, "https://example.com");
+  await getUrls(page, "https://anandchowdhary.com", "https://anandchowdhary.com");
   await browser.close();
-  console.log(items);
+  console.log(Array.from(items).map((i) => i.title));
 };
 crawl();
