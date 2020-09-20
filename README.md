@@ -1,24 +1,66 @@
-# 🖌️ Template
+# 🕷️🔍 Algolia Crawl
 
-This is a starter repository for building Node.js projects at Koj.
+Crawl your website and sync all pages to Algolia search, and auto generate sitemaps from their index.
 
 ## ⭐️ Features
 
-- [Koj's Prettier configuration](./.prettierrc.cjs)
-- [Semantic Release with Gitmoji](./release.config.js)
-- [Dependabot configuration](./.github/dependabot.yml)
-- [Pull request labeler](./.github/labeler.yml)
-- [Merge PRs on approved reviews](./github/actions/automerge.yml)
-- [CLA enforcement for new contributors](./github/actions/cla.yml)
-- [Create PRs from feature/hotfix branches](./github/actions/feature-pr.yml)
-- [Write code in TypeScript](./src/index.ts)
-- [Tests using Jest](./src/index.spec.ts)
+- Crawl your website using Puppeteer
+- Sync all pages to an Algolia search index
+- Generate `sitemap.xml` from the index
 
 ## 💻 Getting started
 
-1. [Create a new repository from this template](https://github.com/koj-co/algolia-crawl/generate)
-2. Install dependencies using `npm install`
-3. Update package details in `package.json`
+Install from npm:
+
+```bash
+npm install algolia-crawl
+```
+
+Use API for Node.js:
+
+```ts
+import { algoliaCrawl, generateSitemap } from "algolia-search";
+
+await algoliaCrawl(); // Crawl all pages and sync index
+await generateSitemap("sitemap.xml"); // Generate a sitemap.xml file
+```
+
+CLI usage:
+
+```bash
+npx algolia-search crawl # Crawl all pages and sync index
+npx algolia-search sitemap sitemap.xml # Generate a sitemap.xml file
+```
+
+### Configuration
+
+You can either create a `.algoliacrawlrc.json` configuration file with the following keys:
+
+```json
+{
+  "appId": "2UFBBTMSYW",
+  "index": "dev_KOJ",
+  "startUrl": "https://koj.co",
+  "baseUrl": "https://koj.co"
+}
+```
+
+`appId` is your Algolia application ID and `index` is the name of the index. `startUrl` is the first page to crawl, and only pages starting with `baseUrl` will be indexed.
+
+Alternately, you can provide these values as environment variables instead of the configuration file:
+
+| Environment variable | Description                    |
+| -------------------- | ------------------------------ |
+| `APP_ID`             | Algolia search application ID  |
+| `INDEX`              | Algolia search index           |
+| `START_URL`          | First page to crawl            |
+| `BASE_URL`           | Index pages with this base URL |
+
+Other environment variables required are:
+
+| Environment variable | Description            |
+| -------------------- | ---------------------- |
+| `API_KEY`            | Algolia search API key |
 
 ## 📄 License
 
