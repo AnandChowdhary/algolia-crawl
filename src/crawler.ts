@@ -75,4 +75,3 @@ export const algoliaCrawl = async () => {
     console.log(error);
   }
 };
-algoliaCrawl();
