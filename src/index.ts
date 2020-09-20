@@ -1,11 +1,7 @@
-import algoliasearch from "algoliasearch";
-import { config, cosmicSync } from "@anandchowdhary/cosmic";
+import { config } from "@anandchowdhary/cosmic";
 import { createHash } from "crypto";
 import { launch, Page } from "puppeteer";
-
-cosmicSync("algoliacrawl");
-const client = algoliasearch(config("appId"), config("apiKey"));
-const index = client.initIndex(config("index"));
+import { index } from "./algolia";
 
 /** Index objects in Algolia search */
 export const indexObjects = async (objects: Readonly<Record<string, any>>[]) => index.saveObjects(objects);
