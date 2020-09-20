@@ -19,7 +19,7 @@ npm install algolia-crawl
 Use API for Node.js:
 
 ```ts
-import { algoliaCrawl, generateSitemap } from "algolia-search";
+import { algoliaCrawl, generateSitemap } from "algolia-crawl";
 
 await algoliaCrawl(); // Crawl all pages and sync index
 await generateSitemap("sitemap.xml"); // Generate a sitemap.xml file
@@ -28,8 +28,8 @@ await generateSitemap("sitemap.xml"); // Generate a sitemap.xml file
 CLI usage:
 
 ```bash
-npx algolia-search crawl # Crawl all pages and sync index
-npx algolia-search sitemap sitemap.xml # Generate a sitemap.xml file
+npx algolia-crawl crawl # Crawl all pages and sync index
+npx algolia-crawl sitemap sitemap.xml # Generate a sitemap.xml file
 ```
 
 ### Configuration
@@ -38,10 +38,10 @@ You can either create a `.algoliacrawlrc.json` configuration file with the follo
 
 ```json
 {
-  "appId": "2UFBBTMSYW",
-  "index": "dev_KOJ",
-  "startUrl": "https://koj.co",
-  "baseUrl": "https://koj.co"
+  "algoliaCrawlAppId": "2UFBBTMSYW",
+  "algoliaCrawlIndex": "dev_KOJ",
+  "algoliaCrawlStartUrl": "https://koj.co",
+  "algoliaCrawlBaseUrl": "https://koj.co"
 }
 ```
 
@@ -49,18 +49,18 @@ You can either create a `.algoliacrawlrc.json` configuration file with the follo
 
 Alternately, you can provide these values as environment variables instead of the configuration file:
 
-| Environment variable | Description                    |
-| -------------------- | ------------------------------ |
-| `APP_ID`             | Algolia search application ID  |
-| `INDEX`              | Algolia search index           |
-| `START_URL`          | First page to crawl            |
-| `BASE_URL`           | Index pages with this base URL |
+| Environment variable      | Description                    |
+| ------------------------- | ------------------------------ |
+| `ALGOLIA_CRAWL_APP_ID`    | Algolia search application ID  |
+| `ALGOLIA_CRAWL_INDEX`     | Algolia search index           |
+| `ALGOLIA_CRAWL_START_URL` | First page to crawl            |
+| `ALGOLIA_CRAWL_BASE_URL`  | Index pages with this base URL |
 
 Other environment variables required are:
 
-| Environment variable | Description            |
-| -------------------- | ---------------------- |
-| `API_KEY`            | Algolia search API key |
+| Environment variable    | Description            |
+| ----------------------- | ---------------------- |
+| `ALGOLIA_CRAWL_API_KEY` | Algolia search API key |
 
 ## 📄 License
 
