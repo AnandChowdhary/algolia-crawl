@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Crawl your site and sync your Algolia search index",
   "main": "dist/index.js",
+  "bin": "dist/cli.js",
   "scripts": {
     "build": "tsc",
     "test": "jest",
