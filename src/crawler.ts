@@ -61,7 +61,13 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
 export const crawl = async () => {
   const browser = await launch();
   const page = await browser.newPage();
-  await getUrls(page, config("algoliaCrawlStartUrl"), config("algoliaCrawlBaseUrl"));
+  if (Array.isArray(config<string | string[]>("algoliaCrawlStartUrl"))) {
+    for await (const url of config<string[]>("algoliaCrawlStartUrl")) {
+      await getUrls(page, url, config("algoliaCrawlBaseUrl"));
+    }
+  } else {
+    await getUrls(page, config("algoliaCrawlStartUrl"), config("algoliaCrawlBaseUrl"));
+  }
   await browser.close();
   return items;
 };
