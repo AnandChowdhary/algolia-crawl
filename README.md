@@ -45,7 +45,7 @@ You can either create a `.algoliacrawlrc.json` configuration file with the follo
 }
 ```
 
-`appId` is your Algolia application ID and `index` is the name of the index. `startUrl` is the first page to crawl, and only pages starting with `baseUrl` will be indexed.
+`appId` is your Algolia application ID and `index` is the name of the index. `startUrl` is the first page to crawl (it can also be an array of strings), and only pages starting with `baseUrl` will be indexed.
 
 Alternately, you can provide these values as environment variables instead of the configuration file:
 
