@@ -35,7 +35,7 @@
     "@semantic-release/github": "^7.1.1",
     "@semantic-release/npm": "^7.0.6",
     "@types/jest": "^26.0.14",
-    "@types/puppeteer": "^3.0.2",
+    "@types/puppeteer": "^5.4.0",
     "@types/yargs": "^15.0.5",
     "jest": "^26.4.2",
     "semantic-release": "^17.1.1",
