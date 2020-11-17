@@ -10,3 +10,13 @@ allowed:
   - unlicense
 reviewed:
   npm:
+    - bl
+    - color-convert
+    - fs.realpath
+    - glob
+    - ieee754
+    - json-parse-even-better-errors
+    - lodash.camelcase
+    - readable-stream
+    - string_decoder
+    - unbzip2-stream
