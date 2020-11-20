@@ -1,6 +1,6 @@
 ---
 name: "@algolia/requester-node-http"
-version: 4.7.0
+version: 4.8.0
 type: npm
 summary: Promise-based request library for node using the native http module.
 homepage: https://github.com/algolia/algoliasearch-client-javascript#readme

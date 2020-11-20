@@ -1,6 +1,6 @@
 ---
 name: "@algolia/requester-browser-xhr"
-version: 4.7.0
+version: 4.8.0
 type: npm
 summary: Promise-based request library for browser using xhr.
 homepage: https://github.com/algolia/algoliasearch-client-javascript#readme

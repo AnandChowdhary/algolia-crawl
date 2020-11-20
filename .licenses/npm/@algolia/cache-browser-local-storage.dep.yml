@@ -1,6 +1,6 @@
 ---
 name: "@algolia/cache-browser-local-storage"
-version: 4.7.0
+version: 4.8.0
 type: npm
 summary: Promise-based cache library for browser using local storage.
 homepage: https://github.com/algolia/algoliasearch-client-javascript#readme
