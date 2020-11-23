@@ -1,3 +1,54 @@
+## [v1.2.1](https://github.com/koj-co/algolia-crawl/compare/v1.2.0...v1.2.1) (2020-11-23)
+
+### ⬆️ Dependency updates
+
+- [`bcbdcb0`](https://github.com/koj-co/algolia-crawl/commit/bcbdcb0)  Bump @koj/config from 1.2.2 to 1.2.3
+- [`8da8285`](https://github.com/koj-co/algolia-crawl/commit/8da8285)  Bump @types/yargs from 15.0.5 to 15.0.6
+- [`95e7954`](https://github.com/koj-co/algolia-crawl/commit/95e7954)  Bump puppeteer from 5.3.0 to 5.3.1
+- [`8e8d8e8`](https://github.com/koj-co/algolia-crawl/commit/8e8d8e8)  Bump @types/yargs from 15.0.6 to 15.0.7
+- [`7e70c24`](https://github.com/koj-co/algolia-crawl/commit/7e70c24)  Bump @koj/config from 1.2.3 to 1.2.4
+- [`4635716`](https://github.com/koj-co/algolia-crawl/commit/4635716)  Bump @koj/config from 1.2.4 to 1.2.5
+- [`a2f3a2a`](https://github.com/koj-co/algolia-crawl/commit/a2f3a2a)  Bump ts-jest from 26.4.0 to 26.4.1
+- [`e20c574`](https://github.com/koj-co/algolia-crawl/commit/e20c574)  Bump jest from 26.4.2 to 26.5.0
+- [`4dda0ab`](https://github.com/koj-co/algolia-crawl/commit/4dda0ab)  Bump jest from 26.5.0 to 26.5.2
+- [`bab6d4d`](https://github.com/koj-co/algolia-crawl/commit/bab6d4d)  Bump @types/yargs from 15.0.7 to 15.0.8
+- [`9eafd11`](https://github.com/koj-co/algolia-crawl/commit/9eafd11)  Bump semantic-release from 17.1.2 to 17.2.0
+- [`f3cb585`](https://github.com/koj-co/algolia-crawl/commit/f3cb585)  Bump jest from 26.5.2 to 26.5.3
+- [`3123e39`](https://github.com/koj-co/algolia-crawl/commit/3123e39)  Bump semantic-release from 17.2.0 to 17.2.1
+- [`7cd8593`](https://github.com/koj-co/algolia-crawl/commit/7cd8593)  Bump yargs from 16.0.3 to 16.1.0
+- [`5cd9601`](https://github.com/koj-co/algolia-crawl/commit/5cd9601)  Bump @types/yargs from 15.0.8 to 15.0.9
+- [`0f14779`](https://github.com/koj-co/algolia-crawl/commit/0f14779)  Bump jest from 26.5.3 to 26.6.0
+- [`afd24d9`](https://github.com/koj-co/algolia-crawl/commit/afd24d9)  Bump @types/jest from 26.0.14 to 26.0.15
+- [`ebf289c`](https://github.com/koj-co/algolia-crawl/commit/ebf289c)  Bump ts-jest from 26.4.1 to 26.4.2
+- [`ee5f38a`](https://github.com/koj-co/algolia-crawl/commit/ee5f38a)  Bump jest from 26.6.0 to 26.6.1
+- [`7aec7c7`](https://github.com/koj-co/algolia-crawl/commit/7aec7c7)  Bump puppeteer from 5.3.1 to 5.4.0
+- [`09e8ff3`](https://github.com/koj-co/algolia-crawl/commit/09e8ff3)  Bump ts-jest from 26.4.2 to 26.4.3
+- [`ffbc4f9`](https://github.com/koj-co/algolia-crawl/commit/ffbc4f9)  Bump typescript from 4.0.2 to 4.0.5
+- [`99cee59`](https://github.com/koj-co/algolia-crawl/commit/99cee59)  Bump puppeteer from 5.4.0 to 5.4.1
+- [`704e188`](https://github.com/koj-co/algolia-crawl/commit/704e188)  Bump @koj/config from 1.2.5 to 1.2.6
+- [`b12c1d8`](https://github.com/koj-co/algolia-crawl/commit/b12c1d8)  Bump semantic-release from 17.2.1 to 17.2.2
+- [`bf13060`](https://github.com/koj-co/algolia-crawl/commit/bf13060)  Bump @koj/config from 1.2.6 to 1.2.7
+- [`2fba991`](https://github.com/koj-co/algolia-crawl/commit/2fba991)  Bump @types/puppeteer from 3.0.2 to 3.0.4
+- [`099906a`](https://github.com/koj-co/algolia-crawl/commit/099906a)  Bump algoliasearch from 4.5.1 to 4.6.0
+- [`6e1da67`](https://github.com/koj-co/algolia-crawl/commit/6e1da67)  Bump jest from 26.6.1 to 26.6.2
+- [`5499404`](https://github.com/koj-co/algolia-crawl/commit/5499404)  Bump @types/puppeteer from 3.0.4 to 5.4.0
+- [`9e14d2f`](https://github.com/koj-co/algolia-crawl/commit/9e14d2f)  Bump jest from 26.6.2 to 26.6.3
+- [`ddd1ad1`](https://github.com/koj-co/algolia-crawl/commit/ddd1ad1)  Bump @koj/config from 1.2.7 to 1.2.8
+- [`54a9c6e`](https://github.com/koj-co/algolia-crawl/commit/54a9c6e)  Bump ts-jest from 26.4.3 to 26.4.4
+- [`7651677`](https://github.com/koj-co/algolia-crawl/commit/7651677)  Bump @semantic-release/github from 7.1.1 to 7.1.2
+- [`2dce590`](https://github.com/koj-co/algolia-crawl/commit/2dce590)  Bump yargs from 16.1.0 to 16.1.1
+- [`d83f1a6`](https://github.com/koj-co/algolia-crawl/commit/d83f1a6)  Update dependencies
+- [`72fcb66`](https://github.com/koj-co/algolia-crawl/commit/72fcb66)  Update koj-co/template
+- [`cb53c69`](https://github.com/koj-co/algolia-crawl/commit/cb53c69)  Update vsoch/pull-request-action requirement to 1.0.11
+- [`0c1712f`](https://github.com/koj-co/algolia-crawl/commit/0c1712f)  Bump @types/yargs from 15.0.9 to 15.0.10
+- [`5d6d369`](https://github.com/koj-co/algolia-crawl/commit/5d6d369)  Bump @koj/config from 1.2.8 to 1.2.9
+- [`1ff2fcf`](https://github.com/koj-co/algolia-crawl/commit/1ff2fcf)  Bump update-template from 1.3.0 to 1.3.1
+- [`8131313`](https://github.com/koj-co/algolia-crawl/commit/8131313)  Bump @semantic-release/github from 7.1.2 to 7.2.0
+- [`858a3b5`](https://github.com/koj-co/algolia-crawl/commit/858a3b5)  Bump vsoch/pull-request-action from 1.0.11 to 1.0.12
+- [`a714e42`](https://github.com/koj-co/algolia-crawl/commit/a714e42)  Bump algoliasearch from 4.7.0 to 4.8.0
+- [`ca77b47`](https://github.com/koj-co/algolia-crawl/commit/ca77b47)  Bump typescript from 4.0.5 to 4.1.2
+- [`282edd3`](https://github.com/koj-co/algolia-crawl/commit/282edd3)  Bump semantic-release from 17.2.3 to 17.2.4
+
 ## [v1.2.0](https://github.com/koj-co/algolia-crawl/compare/v1.1.2...v1.2.0) (2020-09-21)
 
 ### ✨ New features
