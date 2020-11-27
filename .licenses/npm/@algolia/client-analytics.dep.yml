@@ -1,6 +1,6 @@
 ---
 name: "@algolia/client-analytics"
-version: 4.8.1
+version: 4.8.2
 type: npm
 summary: 
 homepage: https://github.com/algolia/algoliasearch-client-javascript#readme
