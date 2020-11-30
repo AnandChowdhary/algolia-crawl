@@ -1,3 +1,11 @@
+## [v1.2.2](https://github.com/koj-co/algolia-crawl/compare/v1.2.1...v1.2.2) (2020-11-30)
+
+### ⬆️ Dependency updates
+
+- [`9224fd9`](https://github.com/koj-co/algolia-crawl/commit/9224fd9)  Bump semantic-release from 17.2.4 to 17.3.0
+- [`476dd77`](https://github.com/koj-co/algolia-crawl/commit/476dd77)  Bump algoliasearch from 4.8.0 to 4.8.1
+- [`de739a4`](https://github.com/koj-co/algolia-crawl/commit/de739a4)  Bump algoliasearch from 4.8.1 to 4.8.2
+
 ## [v1.2.1](https://github.com/koj-co/algolia-crawl/compare/v1.2.0...v1.2.1) (2020-11-23)
 
 ### ⬆️ Dependency updates
