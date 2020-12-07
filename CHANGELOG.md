@@ -1,3 +1,16 @@
+## v1.2.3 (2020-12-07)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.3) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.2...v1.2.3) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.3) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.3.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.3.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`8ed8f3b`](https://github.com/koj-co/algolia-crawl/commit/8ed8f3b)  Bump @types/jest from 26.0.15 to 26.0.16
+- [`7e90291`](https://github.com/koj-co/algolia-crawl/commit/7e90291)  Bump @types/yargs from 15.0.10 to 15.0.11
+- [`38e27c1`](https://github.com/koj-co/algolia-crawl/commit/38e27c1)  Bump @koj/config from 1.2.9 to 1.2.11
+- [`dd91432`](https://github.com/koj-co/algolia-crawl/commit/dd91432)  Bump @semantic-release/npm from 7.0.8 to 7.0.9
+- [`7b26821`](https://github.com/koj-co/algolia-crawl/commit/7b26821)  Bump algoliasearch from 4.8.2 to 4.8.3
+- [`147bbae`](https://github.com/koj-co/algolia-crawl/commit/147bbae)  Bump @types/puppeteer from 5.4.0 to 5.4.1
+
 ## [v1.2.2](https://github.com/koj-co/algolia-crawl/compare/v1.2.1...v1.2.2) (2020-11-30)
 
 ### ⬆️ Dependency updates
