@@ -1,3 +1,12 @@
+## v1.2.5 (2020-12-21)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.5) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.4...v1.2.5) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.5) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.5.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.5.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`fa8b11a`](https://github.com/koj-co/algolia-crawl/commit/fa8b11a)  Bump typescript from 4.1.2 to 4.1.3
+- [`03ca877`](https://github.com/koj-co/algolia-crawl/commit/03ca877)  Bump @types/yargs from 15.0.11 to 15.0.12
+
 ## v1.2.4 (2020-12-14)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.4) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.3...v1.2.4) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.4) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.4.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.4.tar.gz))
