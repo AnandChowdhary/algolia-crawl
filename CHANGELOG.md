@@ -1,3 +1,13 @@
+## v1.2.6 (2020-12-28)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.6) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.5...v1.2.6) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.6) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.6.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.6.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`4dcce8f`](https://github.com/koj-co/algolia-crawl/commit/4dcce8f)  Bump vsoch/pull-request-action from 1.0.12 to 1.0.13
+- [`c5c65d4`](https://github.com/koj-co/algolia-crawl/commit/c5c65d4)  Bump pascalgn/automerge-action from v0.12.0 to v0.13.0
+- [`fe1d78a`](https://github.com/koj-co/algolia-crawl/commit/fe1d78a)  Bump node-notifier from 8.0.0 to 8.0.1
+
 ## v1.2.5 (2020-12-21)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.5) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.4...v1.2.5) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.5) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.5.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.5.tar.gz))
