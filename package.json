@@ -1,6 +1,6 @@
 {
   "name": "algolia-crawl",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Crawl your site and sync your Algolia search index",
   "main": "dist/index.js",
   "bin": "dist/cli.js",
