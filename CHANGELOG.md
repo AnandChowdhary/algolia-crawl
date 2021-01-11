@@ -1,3 +1,12 @@
+## v1.2.8 (2021-01-11)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.8) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.7...v1.2.8) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.8) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.8.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.8.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`eb09898`](https://github.com/koj-co/algolia-crawl/commit/eb09898)  Bump actions/setup-node from v2.1.3 to v2.1.4
+- [`3f58d63`](https://github.com/koj-co/algolia-crawl/commit/3f58d63)  Bump @types/jest from 26.0.19 to 26.0.20
+
 ## v1.2.7 (2021-01-04)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.7) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.6...v1.2.7) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.7) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.7.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.7.tar.gz))
