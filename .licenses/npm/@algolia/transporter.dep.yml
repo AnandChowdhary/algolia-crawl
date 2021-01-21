@@ -1,6 +1,6 @@
 ---
 name: "@algolia/transporter"
-version: 4.8.3
+version: 4.8.4
 type: npm
 summary: Promise-based transporter layer with embedded retry strategy.
 homepage: https://github.com/algolia/algoliasearch-client-javascript#readme

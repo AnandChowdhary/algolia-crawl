@@ -1,6 +1,6 @@
 ---
 name: algoliasearch
-version: 4.8.3
+version: 4.8.4
 type: npm
 summary: A fully-featured and blazing-fast JavaScript API client to interact with
   Algolia API.
