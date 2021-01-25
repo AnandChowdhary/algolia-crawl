@@ -1,3 +1,15 @@
+## v1.2.10 (2021-01-25)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.10) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.9...v1.2.10) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.10) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.10.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.10.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`0bf5b62`](https://github.com/koj-co/algolia-crawl/commit/0bf5b62)  Bump @semantic-release/npm from 7.0.9 to 7.0.10
+- [`ad81bac`](https://github.com/koj-co/algolia-crawl/commit/ad81bac)  Bump semantic-release from 17.3.2 to 17.3.3
+- [`f5c6a07`](https://github.com/koj-co/algolia-crawl/commit/f5c6a07)  Bump semantic-release from 17.3.3 to 17.3.4
+- [`4d75185`](https://github.com/koj-co/algolia-crawl/commit/4d75185)  Bump algoliasearch from 4.8.3 to 4.8.4
+- [`9d3462f`](https://github.com/koj-co/algolia-crawl/commit/9d3462f)  Bump semantic-release from 17.3.4 to 17.3.6
+
 ## v1.2.9 (2021-01-18)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.9) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.8...v1.2.9) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.9) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.9.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.9.tar.gz))
