@@ -1,3 +1,11 @@
+## v1.2.11 (2021-02-01)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.11) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.10...v1.2.11) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.11) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.11.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.11.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`7402ef5`](https://github.com/koj-co/algolia-crawl/commit/7402ef5)  Bump semantic-release from 17.3.6 to 17.3.7
+
 ## v1.2.10 (2021-01-25)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.10) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.9...v1.2.10) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.10) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.10.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.10.tar.gz))
