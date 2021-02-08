@@ -1,3 +1,12 @@
+## v1.2.12 (2021-02-08)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.12) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.11...v1.2.12) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.12) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.12.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.12.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`c6fcf42`](https://github.com/koj-co/algolia-crawl/commit/c6fcf42)  Bump ts-jest from 26.4.4 to 26.5.0
+- [`97273ba`](https://github.com/koj-co/algolia-crawl/commit/97273ba)  Bump @types/puppeteer from 5.4.2 to 5.4.3
+
 ## v1.2.11 (2021-02-01)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.11) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.10...v1.2.11) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.11) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.11.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.11.tar.gz))
