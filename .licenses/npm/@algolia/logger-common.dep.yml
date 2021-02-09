@@ -1,6 +1,6 @@
 ---
 name: "@algolia/logger-common"
-version: 4.8.4
+version: 4.8.5
 type: npm
 summary: Common interfaces for promise-based log libraries
 homepage: https://github.com/algolia/algoliasearch-client-js#readme
