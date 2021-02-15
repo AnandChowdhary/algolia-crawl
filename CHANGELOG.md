@@ -1,3 +1,15 @@
+## v1.2.13 (2021-02-15)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.13) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.12...v1.2.13) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.13) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.13.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.13.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`9554d5d`](https://github.com/koj-co/algolia-crawl/commit/9554d5d)  Bump semantic-release from 17.3.7 to 17.3.8
+- [`b7efc45`](https://github.com/koj-co/algolia-crawl/commit/b7efc45)  Bump algoliasearch from 4.8.4 to 4.8.5
+- [`0955b25`](https://github.com/koj-co/algolia-crawl/commit/0955b25)  Bump typescript from 4.1.3 to 4.1.4
+- [`0e013cc`](https://github.com/koj-co/algolia-crawl/commit/0e013cc)  Bump ts-jest from 26.5.0 to 26.5.1
+- [`9415b13`](https://github.com/koj-co/algolia-crawl/commit/9415b13)  Bump typescript from 4.1.4 to 4.1.5
+
 ## v1.2.12 (2021-02-08)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.12) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.11...v1.2.12) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.12) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.12.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.12.tar.gz))
