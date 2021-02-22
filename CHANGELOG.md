@@ -1,3 +1,14 @@
+## v1.2.14 (2021-02-22)
+
+[📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.14) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.13...v1.2.14) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.14) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.14.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.14.tar.gz))
+
+### ⬆️ Dependency updates
+
+- [`75a3e5a`](https://github.com/koj-co/algolia-crawl/commit/75a3e5a)  Bump semantic-release from 17.3.8 to 17.3.9
+- [`aa5160b`](https://github.com/koj-co/algolia-crawl/commit/aa5160b)  Bump vsoch/pull-request-action from 1.0.13 to 1.0.14
+- [`4af8f33`](https://github.com/koj-co/algolia-crawl/commit/4af8f33)  Bump pascalgn/automerge-action from v0.13.0 to v0.13.1
+- [`e64e227`](https://github.com/koj-co/algolia-crawl/commit/e64e227)  Bump vsoch/pull-request-action from 1.0.14 to 1.0.15
+
 ## v1.2.13 (2021-02-15)
 
 [📝 Release notes](https://github.com/koj-co/algolia-crawl/releases/tag/v1.2.13) · [💻 Compare](https://github.com/koj-co/algolia-crawl/compare/v1.2.12...v1.2.13) · [🔖 Tag](https://github.com/koj-co/algolia-crawl/tree/v1.2.13) · 🗄️ Archive ([zip](https://github.com/koj-co/algolia-crawl/archive/v1.2.13.zip) · [tar.gz](https://github.com/koj-co/algolia-crawl/archive/v1.2.13.tar.gz))
