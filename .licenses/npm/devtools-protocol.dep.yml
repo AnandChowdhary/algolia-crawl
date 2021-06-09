@@ -1,6 +1,6 @@
 ---
 name: devtools-protocol
-version: 0.0.818844
+version: 0.0.883894
 type: npm
 summary: The Chrome DevTools Protocol JSON
 homepage: https://github.com/ChromeDevTools/devtools-protocol#readme

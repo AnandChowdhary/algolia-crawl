@@ -1,17 +1,16 @@
 ---
-name: ws
-version: 7.4.6
+name: chrome-aws-lambda
+version: 10.0.0
 type: npm
-summary: Simple to use, blazing fast and thoroughly tested websocket client and server
-  for Node.js
-homepage: https://github.com/websockets/ws
+summary: Chromium Binary for AWS Lambda and Google Cloud Functions
+homepage: https://github.com/alixaxel/chrome-aws-lambda
 license: mit
 licenses:
 - sources: LICENSE
   text: |
-    The MIT License (MIT)
+    MIT License
 
-    Copyright (c) 2011 Einar Otto Stangvik <einaros@gmail.com>
+    Copyright (c) 2018 Alix Axel
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -31,19 +30,5 @@ licenses:
     OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
     SOFTWARE.
 - sources: README.md
-  text: |-
-    [MIT](LICENSE)
-
-    [changelog]: https://github.com/websockets/ws/releases
-    [client-report]: http://websockets.github.io/ws/autobahn/clients/
-    [https-proxy-agent]: https://github.com/TooTallNate/node-https-proxy-agent
-    [node-zlib-bug]: https://github.com/nodejs/node/issues/8871
-    [node-zlib-deflaterawdocs]:
-      https://nodejs.org/api/zlib.html#zlib_zlib_createdeflateraw_options
-    [permessage-deflate]: https://tools.ietf.org/html/rfc7692
-    [server-report]: http://websockets.github.io/ws/autobahn/servers/
-    [session-parse-example]: ./examples/express-session-parse
-    [socks-proxy-agent]: https://github.com/TooTallNate/node-socks-proxy-agent
-    [ws-server-options]:
-      https://github.com/websockets/ws/blob/master/doc/ws.md#new-websocketserveroptions-callback
+  text: MIT
 notices: []

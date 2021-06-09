@@ -1,6 +1,6 @@
 ---
 name: https-proxy-agent
-version: 4.0.0
+version: 5.0.0
 type: npm
 summary: An HTTP(s) proxy `http.Agent` implementation for HTTPS
 homepage: https://github.com/TooTallNate/node-https-proxy-agent#readme

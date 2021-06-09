@@ -1,6 +1,6 @@
 ---
-name: puppeteer
-version: 5.5.0
+name: puppeteer-core
+version: 10.0.0
 type: npm
 summary: A high-level API to control headless Chrome over the DevTools Protocol
 homepage: https://github.com/puppeteer/puppeteer#readme
