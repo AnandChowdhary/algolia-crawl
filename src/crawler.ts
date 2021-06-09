@@ -1,10 +1,12 @@
 import { config } from "@anandchowdhary/cosmic";
 import { createHash } from "crypto";
-import { launch, Page } from "puppeteer";
+import { Page } from "puppeteer-core";
 import { index } from "./algolia";
+import chrome from "chrome-aws-lambda";
 
 /** Index objects in Algolia search */
-export const indexObjects = async (objects: Readonly<Record<string, any>>[]) => index.saveObjects(objects);
+export const indexObjects = async (objects: Readonly<Record<string, any>>[]) =>
+  index.saveObjects(objects);
 
 const items: Set<{
   objectID: string;
@@ -26,11 +28,15 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
   let description: string | undefined = undefined;
   try {
     description =
-      (await page.$eval("head > meta[name='description']", (element) => element.getAttribute("content"))) ?? undefined;
+      (await page.$eval("head > meta[name='description']", (element) =>
+        element.getAttribute("content")
+      )) ?? undefined;
   } catch (error) {}
   let text: string | undefined = undefined;
   try {
-    text = (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerText)) ?? undefined;
+    text =
+      (await page.$eval("main, body, html", (element) => (element as HTMLBodyElement).innerText)) ??
+      undefined;
   } catch (error) {}
   let title = "";
   try {
@@ -59,7 +65,13 @@ export const getUrls = async (page: Page, _url: string, baseUrl?: string) => {
 };
 
 export const crawl = async () => {
-  const browser = await launch();
+  const browser = await chrome.puppeteer.launch({
+    executablePath: await chrome.executablePath,
+    args: chrome.args,
+    defaultViewport: chrome.defaultViewport,
+    headless: chrome.headless,
+  });
+
   const page = await browser.newPage();
   if (Array.isArray(config<string | string[]>("algoliaCrawlStartUrl"))) {
     for await (const url of config<string[]>("algoliaCrawlStartUrl")) {
